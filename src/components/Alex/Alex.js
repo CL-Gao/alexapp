@@ -10,7 +10,7 @@ function Alex() {
     <div className="bg-white w-full mx-auto overflow-hidden">
       <div className="mx-auto">
         <div className="max-w-screen-lg mx-auto">
-          <nav className="w-full md:py-3 py-4 px-5 sm:px-10 flex items-center justify-between gap-5">
+          <nav className="w-full px-5  md:px-12 xl:px-5 py-6 flex items-center justify-between gap-5">
             <a href="/" className="w-24">
               <img className="w-full h-full" src={logo} alt="" />
             </a>
@@ -18,99 +18,69 @@ function Alex() {
             <div className="md:flex hidden items-end justify-between gap-9 mt-1">
               <a
                 href="#"
-                className="text-gray-600 hover:text-blue-700 transition-colors ease-in-out duration-150"
+                className="text-brand-gray font-medium hover:text-blue-700 transition-colors ease-in-out duration-150"
               >
                 Landings
               </a>
               <a
                 href="#"
-                className="text-gray-600 hover:text-blue-700 transition-colors ease-in-out duration-150"
+                className="text-brand-gray font-medium hover:text-blue-700 transition-colors ease-in-out duration-150"
               >
                 Pages
               </a>
               <a
                 href="#"
-                className="text-gray-600 hover:text-blue-700 transition-colors ease-in-out duration-150"
+                className="text-brand-gray font-medium hover:text-blue-700 transition-colors ease-in-out duration-150"
               >
                 Account
               </a>
               <a
                 href="#"
-                className="text-gray-600 hover:text-blue-700 transition-colors ease-in-out duration-150"
+                className="text-brand-gray font-medium hover:text-blue-700 transition-colors ease-in-out duration-150"
               >
                 Documentation
               </a>
             </div>
 
-            <button className="md:inline-flex hidden text-center text-white px-5 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 transition-all ease-in-out duration-200 hover:-translate-y-0.5 transform hover:shadow-lg">
-              Buy Now
+            <button className="md:inline-flex hidden text-center text-white px-[16px] py-[9px] font-semibold rounded-lg bg-blue-600 hover:bg-blue-700 transition-all ease-in-out duration-200 hover:-translate-y-0.5 transform hover:shadow-lg">
+              Buy now
             </button>
-            <button className="md:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-7 w-7 hover:text-blue-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
+            <button className="md:hidden px-3">
+              <span className="navbar"></span>
             </button>
           </nav>
         </div>
 
         <div className="max-w-screen-lg mx-auto">
-          <div className="w-full px-5 sm:px-10 text-center md:text-left flex md:flex-row flex-col-reverse items-center justify-between lg:gap-4 gap-16 lg:pt-36 pt-24 pb-24">
-            <div className="lg:max-w-[550px] flex flex-col gap-6 w-full">
-              <h1 className="sm:text-5xl text-4xl text-gray-800">
+          <div className="w-full px-5  md:px-12 xl:px-5  text-center md:text-left flex md:flex-row flex-col-reverse items-center justify-between lg:gap-4 gap-8 lg:pt-20 pt-10 pb-16">
+            <div className="w-full lg:w-6/12 flex flex-col gap-4 md:gap-6">
+              <h1 className="sm:text-5xl text-4xl text-gray-800 !leading-[1.2]">
                 Welcome to <span className="text-blue-600">LandKit</span>.<br />
                 Develop anything.
               </h1>
-              <p className="text-gray-400 text-xl max-w-[500px] w-full mx-auto lg:max-w-none lg:w-auto leading-normal">
+              <p className="text-gray-400 text-[19px] md:text-xl max-w-[500px] pb-3 w-full mx-auto lg:max-w-none lg:w-auto tracking-tight leading-normal">
                 Build a beautiful, modern website with flexible
                 Bootstrapcomponents built from scratch.
               </p>
 
-              <div className="max-w-[320px] w-full sm:w-auto mx-auto sm:mx-0 sm:max-w-none grid-cols-[repeat(auto-fit,minmax(140px,1fr))] grid sm:flex justify-center md:justify-start items-center gap-2 mt-3">
-                <button className="w-fit flex mx-auto sm:w-auto sm:mx-0 items-center justify-center gap-1.5  text-center text-white px-5 py-3.5 rounded-lg bg-blue-600 hover:bg-blue-700 transition-all ease-in-out duration-200 hover:-translate-y-0.5 transform hover:shadow-lg font-semibold">
-                  <span className="text-sm sm:text-base">View all pages</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="sm:h-6 h-4 w-4 sm:w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M13 7l5 5m0 0l-5 5m5-5H6"
-                    />
-                  </svg>
+              <div className="w-[350px] sm:w-auto mx-auto sm:mx-0 sm:max-w-none  flex justify-center md:justify-start items-center gap-2 mt-3">
+                <button className="w-auto md:w-fit flex mx-auto sm:w-auto sm:mx-0 items-center  justify-center gap-1.5  text-center text-white px-5 py-3.5 rounded-lg bg-blue-600 hover:bg-blue-700 transition-all ease-in-out duration-200 hover:-translate-y-0.5 transform hover:shadow-lg font-semibold">
+                  <span className="text-[17px]">View all pages</span>
                 </button>
 
-                <button className="w-fit text-center mx-auto sm:w-auto sm:mx-0 text-blue-600 px-5 py-3.5 rounded-lg bg-blue-600 bg-opacity-10 font-semibold transition-all ease-in-out duration-200 hover:-translate-y-0.5 transform hover:shadow-lg text-sm sm:text-base">
-                  Documentationn
+                <button className="w-auto md:w-fit text-[17px] text-center mx-auto sm:w-auto sm:mx-0 text-blue-600 px-5 py-3.5 rounded-lg bg-blue-600 bg-opacity-10 font-semibold transition-all ease-in-out duration-200 hover:-translate-y-0.5 transform hover:shadow-lg ">
+                  Documentation
                 </button>
               </div>
             </div>
-            <div>
-              <img
-                className="w-full h-full max-w-xl mx-auto block lg:max-w-[400px] lg:mx-0 transform md:scale-125 lg:scale-100"
-                src={hero}
-              />
+            <div className="w-full lg:w-6/12  ">
+              <img className="h-full mw-lg-130" src={hero} />
             </div>
           </div>
         </div>
 
         <div className="max-w-screen-lg mx-auto">
-          <div className="w-full px-5 md:px-10 grid md:grid-cols-3 grid-cols-1 gap-6 max-w-[560px] md:max-w-none mx-auto">
+          <div className="w-full px-5  md:px-12 xl:px-5 grid md:grid-cols-3 grid-cols-1 gap-8 md:gap-10 xl:gap-8 max-w-[570px] md:max-w-none mx-auto">
             <div className="flex flex-col gap-3 w-full">
               <div>
                 <svg
@@ -135,7 +105,7 @@ function Alex() {
               <h4 className="text-gray-800 text-[21px]">
                 Built for developers{" "}
               </h4>
-              <p className="text-blue-lighter leading-7 tracking-wide text-[17px]">
+              <p className="text-blue-lighter leading-7 tracking-normal text-[17px]">
                 Landkit is built to make your life easier. Variables, build
                 tooling, documentation, and reusable components.
               </p>
@@ -165,7 +135,7 @@ function Alex() {
               <h4 className="text-gray-800 text-[21px]">
                 Designed to be modern{" "}
               </h4>
-              <p className="text-blue-lighter leading-7 tracking-wide text-[17px]">
+              <p className="text-blue-lighter leading-7 tracking-normal text-[17px]">
                 Designed with the latest design trends in mind. Landkit feels
                 modern, minimal, and beautiful.
               </p>
@@ -200,7 +170,7 @@ function Alex() {
               <h4 className="text-gray-800 text-[21px]">
                 Documentation for everything
               </h4>
-              <p className="text-blue-lighter leading-7 tracking-wide text-[17px]">
+              <p className="text-blue-lighter leading-7 tracking-normal text-[17px]">
                 We've written extensive documentation for components and tools,
                 so you never have to reverse engineer anything.
               </p>
@@ -208,12 +178,12 @@ function Alex() {
           </div>
         </div>
 
-        <div className="border-t border-gray-100 my-14 md:mt-20 md:mb-12">
+        <div className="border-t border-gray-100 my-12 md:mt-20 md:mb-12 px-5 md:px-12 xl:px-5">
           <div className="max-w-screen-lg mx-auto">
-            <div className="grid px-5 max-w-[560px] pt-12 md:max-w-none mx-auto md:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-10">
+            <div className="grid px-2 max-w-[560px] pt-8 md:pt-12 md:max-w-none mx-auto md:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-5 md:gap-10">
               <div className="text-blue-lighter flex justify-center">
                 <svg
-                  className="fill-current w-36"
+                  className="fill-current w-44 md:w-36"
                   viewBox="0 0 2761 991"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -227,7 +197,7 @@ function Alex() {
 
               <div className="text-blue-lighter flex justify-center">
                 <svg
-                  className="fill-current w-36"
+                  className="fill-current w-44 md:w-36"
                   viewBox="0 0 2761 991"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -241,7 +211,7 @@ function Alex() {
 
               <div className="text-blue-lighter flex justify-center">
                 <svg
-                  className="fill-current w-36"
+                  className="fill-current w-44 md:w-36"
                   viewBox="0 0 2761 991"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -255,7 +225,7 @@ function Alex() {
 
               <div className="text-blue-lighter flex justify-center">
                 <svg
-                  className="fill-current w-36"
+                  className="fill-current w-44 md:w-36"
                   viewBox="0 0 2761 991"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -269,7 +239,7 @@ function Alex() {
 
               <div className="text-blue-lighter flex justify-center">
                 <svg
-                  className="fill-current w-36"
+                  className="fill-current w-44 md:w-36"
                   viewBox="0 0 2761 991"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -283,7 +253,7 @@ function Alex() {
 
               <div className="text-blue-lighter flex justify-center">
                 <svg
-                  className="fill-current w-36"
+                  className="fill-current w-44 md:w-36"
                   viewBox="0 0 2761 991"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -298,8 +268,8 @@ function Alex() {
           </div>
         </div>
 
-        <div className="bg-light-gradient px-5 md:px-10 pt-12 border-t border-gray-100">
-          <div className="max-w-screen-lg mx-auto">
+        <div className="bg-light-gradient px-5 md:px-12 xl:px-5 pt-12 border-t border-gray-100">
+          <div className="max-w-screen-lg mx-auto ">
             <div className="w-full max-w-[560px] md:max-w-none mx-auto flex md:flex-row flex-col-reverse items-center justify-between lg:gap-32 sm:gap-20 gap-10">
               <div className="max-w-[560px] md:max-w-sm w-full rounded-lg overflow-hidden lg:shadow-none shadow-card hover:shadow-card hover:-translate-y-1 transform transition-all ease-in-out duration-200">
                 <div className="w-full h-64 object-cover">
@@ -324,20 +294,20 @@ function Alex() {
                     placeholder="Password"
                   />
 
-                  <button className="text-center text-white px-5 py-3.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 transition-all ease-in-out duration-200 hover:-translate-y-0.5 transform hover:shadow-lg">
-                    Documentationn
+                  <button className="text-center text-white px-5 py-3.5 rounded-lg bg-brand-green hover:bg-emerald-600 transition-all ease-in-out duration-200 hover:-translate-y-0.5 transform hover:shadow-lg">
+                    Download a sample
                   </button>
                 </div>
               </div>
 
               <div className="w-full flex flex-col gap-5">
-                <h4 className="text-gray-800 text-[31px] font-normal leading-snug">
+                <h4 className="text-gray-800 text-[24px] md:text-[31px] font-normal leading-snug">
                   The most useful resource <br />
-                  <span className=" text-emerald-500">
+                  <span className=" text-brand-green">
                     ever created for designers.{" "}
                   </span>
                 </h4>
-                <p className="text-gray-400 leading-relaxed sm:text-[19px]">
+                <p className="text-gray-400 leading-relaxed  text-[19px]">
                   Using Landkit to build your site means never worrying about
                   designing another page or cross browser compatibility. Our
                   ever-growing library of components and pre-designed layouts
@@ -360,7 +330,9 @@ function Alex() {
                         <polyline points="20 6 9 17 4 12"></polyline>
                       </svg>
                     </div>
-                    <p className="text-emerald-500">Lifetime updates </p>
+                    <p className="text-brand-green text-[17px] font-medium">
+                      Lifetime updates{" "}
+                    </p>
                   </div>
 
                   <div className="flex items-center gap-3">
@@ -378,7 +350,9 @@ function Alex() {
                         <polyline points="20 6 9 17 4 12"></polyline>
                       </svg>
                     </div>
-                    <p className="text-emerald-500">Tech support </p>
+                    <p className="text-brand-green text-[17px] font-medium">
+                      Tech support{" "}
+                    </p>
                   </div>
 
                   <div className="flex items-center gap-3">
@@ -396,7 +370,9 @@ function Alex() {
                         <polyline points="20 6 9 17 4 12"></polyline>
                       </svg>
                     </div>
-                    <p className="text-emerald-500">Tons of assets </p>
+                    <p className="text-brand-green text-[17px] font-medium">
+                      Tons of assets{" "}
+                    </p>
                   </div>
 
                   <div className="flex items-center gap-3">
@@ -414,29 +390,31 @@ function Alex() {
                         <polyline points="20 6 9 17 4 12"></polyline>
                       </svg>
                     </div>
-                    <p className="text-emerald-500">Integration ready </p>
+                    <p className="text-brand-green text-[17px] font-medium">
+                      Integration ready{" "}
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="flex max-w-[560px] md:max-w-none mx-auto md:flex-row flex-col justify-between w-full items-center pt-28 pb-14 md:py-24 lg:gap-6 gap-14">
-              <div className="lg:max-w-lg flex w-full flex-col gap-5">
-                <h4 className="text-gray-800 text-[31px] font-normal leading-snug">
+              <div className="lg:max-w-lg flex w-full flex-col gap-y-6 md:gap-5">
+                <h4 className="text-gray-800 text-[24px] md:text-[31px] font-normal leading-snug">
                   We have lots of experience <br />
                   <span className=" text-blue-600">
                     building Bootstrap themes.{" "}
                   </span>
                 </h4>
 
-                <p className="text-gray-400 leading-relaxed sm:text-[19px]">
+                <p className="text-gray-400 leading-relaxed text-[19px]">
                   We've built well over a dozen Bootstrap themes and sold tens
                   of thousands of copies.
                 </p>
 
-                <div className="flex gap-4 items-start mt-3">
+                <div className="flex gap-x-6 gap-y-4 md:gap-4 items-start mt-3">
                   <svg
-                    className="w-14 "
+                    className="md:w-14 w-24 "
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -453,8 +431,8 @@ function Alex() {
                       ></path>
                     </g>
                   </svg>
-                  <div className="flex flex-col gap-2">
-                    <h5 className="text-[19px] text-gray-800">
+                  <div className="flex flex-col gap-1 md:gap-2">
+                    <h5 className="text-[17px] md:text-[19px] text-gray-800">
                       Bootstrap users since the beginning{" "}
                     </h5>
                     <p className="text-gray-400 leading-relaxed text-[17px]">
@@ -464,9 +442,9 @@ function Alex() {
                   </div>
                 </div>
 
-                <div className="flex gap-4 items-start">
+                <div className="flex gap-x-6 gap-y-4 md:gap-4 items-start">
                   <svg
-                    className="w-14 "
+                    className="md:w-14 w-28 "
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -488,8 +466,8 @@ function Alex() {
                       ></rect>
                     </g>
                   </svg>
-                  <div className="flex flex-col gap-2">
-                    <h5 className="text-[19px] text-gray-800">
+                  <div className="flex flex-col  gap-1 md:gap-2">
+                    <h5 className="text-[17px] md:text-[19px] text-gray-800">
                       Deep understanding of Bootstrap{" "}
                     </h5>
                     <p className="text-gray-400 leading-relaxed text-[17px]">
@@ -512,7 +490,7 @@ function Alex() {
 
         <div className="max-w-screen-lg mx-auto">
           <div className="flex flex-col items-center gap-5 py-10 px-5">
-            <h6 className="text-center text-gray-800 text-[31px] font-normal">
+            <h6 className="text-center text-gray-800 text-[24px] md:text-[31px] font-normal">
               Our customers are our biggest fans.{" "}
             </h6>
             <p className="text-blue-lighter max-w-[500px] text-[19px] leading-relaxed text-center md:max-w-2xl mx-auto">
@@ -523,16 +501,16 @@ function Alex() {
           </div>
         </div>
 
-        <div className="px-5 lg:px-20">
-          <div className="relative max-w-[500px] md:max-w-4xl mx-auto">
+        <div className="max-w-screen-lg mx-auto px-5 md:px-12 xl:px-5">
+          <div className="relative  w-full mx-auto">
             <div className="rounded-lg shadow-2xl bg-white overflow-hidden flex flex-col md:flex-row items-center justify-between w-full">
               <div className="w-full md:w-[45%]">
-                <img className="h-80 w-full object-cover" src={photo1} />
+                <img className="h-86 w-full object-cover" src={photo1} />
               </div>
 
               <div className="lg:w-[55%] w-full flex flex-col gap-5 px-6 sm:px-10 items-center justify-center md:py-0 py-8">
                 <svg
-                  className="w-48 text-[#FF5A5F]"
+                  className="w-36 md:w-40 text-[#FF5A5F]"
                   viewBox="0 0 2761 991"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -542,7 +520,7 @@ function Alex() {
                     fill-rule="nonzero"
                   ></path>
                 </svg>
-                <p className="text-gray-800 sm:text-lg md:text-xl leading-relaxed text-center max-w-2xl mx-auto">
+                <p className="text-gray-800 px-5 text-[20px] sm:text-lg md:text-xl leading-relaxed text-center max-w-2xl mx-auto pt-5">
                   “Landkit is hands down the most useful front end Bootstrap
                   theme I've ever used. I can't wait to use it again for my next
                   project.”
@@ -554,7 +532,7 @@ function Alex() {
               </div>
             </div>
 
-            <div className="md:w-14 h-10 w-10 md:h-14 rounded-full bg-blue-600 flex items-center justify-center absolute left-1 sm:left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2">
+            <div className="md:w-14 h-14 w-14 md:h-14 rounded-full bg-blue-600 flex items-center justify-center absolute left-3 md:left-1 sm:left-0 mt-16 md:mt-0 top-2/3 md:top-1/2 transform -translate-y-1/2 -translate-x-1/2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-6 w-6 text-white"
@@ -571,7 +549,7 @@ function Alex() {
               </svg>
             </div>
 
-            <div className="md:w-14 h-10 w-10 md:h-14 rounded-full bg-blue-600 flex items-center justify-center absolute right-1 sm:right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2">
+            <div className="md:w-14 h-14 w-14 md:h-14 rounded-full bg-blue-600 flex items-center justify-center absolute right-3 md:right-1 sm:right-0  mt-16 md:mt-0 top-2/3 md:top-1/2 transform -translate-y-1/2 translate-x-1/2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-6 w-6 text-white"
@@ -590,13 +568,13 @@ function Alex() {
           </div>
         </div>
 
-        <div className="bg-[#f1f4f8]">
+        <div className="bg-[#f1f4f8] px-5 md:px-12 xl:px-5  mb-[90%] md:mb-0">
           <div className="max-w-[500px] md:max-w-screen-lg mx-auto">
-            <div className="-mt-24 lg:mx-0 -mx-5 px-5">
-              <div className="pb-10 md:pb-28 pt-56">
-                <div className="flex md:flex-row flex-col items-center justify-between w-full md:px-12 px-6 lg:gap-3 gap-16">
+            <div className=" md:-mt-24  ">
+              <div className="pb-10 md:pb-28 pt-32 md:pt-56">
+                <div className="flex md:flex-row flex-col items-center justify-between w-full  lg:gap-3 gap-16">
                   <div className="lg:max-w-md max-w-[500px] w-full flex flex-col gap-5">
-                    <h4 className="text-gray-800 text-[31px] font-normal tracking-tight leading-snug">
+                    <h4 className="text-gray-800 text-[24px] md:text-[31px] font-normal tracking-tight leading-snug">
                       Stay focused on your business. <br />
                       <span className=" text-blue-600">
                         Let us handle the design.{" "}
@@ -640,12 +618,13 @@ function Alex() {
                 </div>
               </div>
 
-              <div className="flex flex-col items-center gap-5 pt-10 pb-72 lg:mx-0 mx-5">
-                <h6 className="text-center text-gray-800 text-[31px] font-normal">
+              <div className="flex flex-col items-center gap-5 pt-10 pb-80 ">
+                <h6 className="text-center text-gray-800 text-[30px] md:text-[37px] font-normal">
                   Fair, simple pricing for all.{" "}
                 </h6>
-                <p className="text-gray-500 text-[21px] leading-relaxed text-center max-w-2xl mx-auto">
+                <p className="text-brand-gray tracking-tight text-[21px] leading-relaxed text-center max-w-2xl mx-auto">
                   All types of businesses need access to development resources,
+                  <br />
                   so we give you the option to decide how much you need to use.
                 </p>
 
@@ -675,121 +654,126 @@ function Alex() {
           <div className="">
             <div className="max-w-screen-lg mx-auto">
               <div className="lg:mx-0 -mx-5">
-                <div className="py-16 px-5 lg:px-6">
-                  <div className="flex md:flex-row flex-col items-center justify-center md:-mt-[32%] sm:-mt-[40%] -mt-[80%] md:gap-0 gap-12 lg:mx-0 mx-6">
-                    <div className="md:w-1/2 max-w-md w-full bg-white shadow-2xl rounded-lg overflow-hidden z-10">
+                <div className="py-16 px-5 md:px-12 xl:px-5">
+                  <div className="flex md:flex-row flex-col items-center justify-center md:-mt-[32%] sm:-mt-[40%] -mt-[160%] md:gap-0 gap-12 lg:mx-0 mx-6">
+                    <div className=" w-full bg-white shadow-2xl rounded-lg overflow-hidden z-10">
                       <div className="flex flex-col items-center max-w-sm  md:pt-16 pt-10 md:pb-12 pb-7 mx-auto">
-                        <div className="self-center px-4 py-2 text-blue-600 tracking-wide text-xs leading-none bg-blue-100 rounded-full uppercase">
+                        <div className="self-center font-semibold px-4 py-2 text-blue-600 tracking-wide text-xs leading-none bg-blue-100 rounded-full uppercase">
                           Standard
                         </div>
 
-                        <div className="flex flex-col gap-1 my-12">
-                          <div className="flex items-end">
+                        <div className="flex flex-col gap-1 mt-6 md:mt-12">
+                          <div className="flex items-center md:items-end">
                             <div className="flex items-start">
-                              <span className="text-gray-900 text-2xl">$</span>
-                              <p className="text-6xl text-gray-900">29</p>
+                              <span className="text-gray-900  text-[24px] md:text-[31px] pt-3 md:pt-0">
+                                $
+                              </span>
+                              <p className="text-[40px] md:text-6xl text-gray-900">
+                                29
+                              </p>
                             </div>
-                            <div className="text-3xl text-gray-900">/mo</div>
+                            <div className="text-[24px] md:text-[31px] text-gray-900">
+                              /mo
+                            </div>
                           </div>
                           <p className="text-gray-400 text-center">per seat</p>
                         </div>
-
-                        <div className="flex flex-col gap-5">
-                          <div className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full inline-flex items-center justify-center bg-emerald-400 bg-opacity-10">
-                              <svg
-                                className="h-3 w-3 text-emerald-400"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              >
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                              </svg>
-                            </div>
-                            <p className="text-gray-800 text-[17px]">
-                              Rich, responsive landing pages
-                            </p>
+                      </div>
+                      <div className="flex flex-col gap-5 px-8 pb-12">
+                        <div className="flex items-center gap-3">
+                          <div className="w-5 h-5 rounded-full inline-flex items-center justify-center bg-emerald-400 bg-opacity-10">
+                            <svg
+                              className="h-3 w-3 text-emerald-400"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
                           </div>
-                          <div className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full inline-flex items-center justify-center bg-emerald-400 bg-opacity-10">
-                              <svg
-                                className="h-3 w-3 text-emerald-400"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              >
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                              </svg>
-                            </div>
-                            <p className="text-gray-800 text-[17px]">
-                              100+ styled components
-                            </p>
+                          <p className="text-gray-800 text-[17px]">
+                            Rich, responsive landing pages
+                          </p>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <div className="w-5 h-5 rounded-full inline-flex items-center justify-center bg-emerald-400 bg-opacity-10">
+                            <svg
+                              className="h-3 w-3 text-emerald-400"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
                           </div>
-                          <div className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full inline-flex items-center justify-center bg-emerald-400 bg-opacity-10">
-                              <svg
-                                className="h-3 w-3 text-emerald-400"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              >
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                              </svg>
-                            </div>
-                            <p className="text-gray-800 text-[17px]">
-                              Flexible, simple license
-                            </p>
+                          <p className="text-gray-800 text-[17px]">
+                            100+ styled components
+                          </p>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <div className="w-5 h-5 rounded-full inline-flex items-center justify-center bg-emerald-400 bg-opacity-10">
+                            <svg
+                              className="h-3 w-3 text-emerald-400"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
                           </div>
-                          <div className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full inline-flex items-center justify-center bg-emerald-400 bg-opacity-10">
-                              <svg
-                                className="h-3 w-3 text-emerald-400"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              >
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                              </svg>
-                            </div>
-                            <p className="text-gray-800 text-[17px]">
-                              Speedy build tooling
-                            </p>
+                          <p className="text-gray-800 text-[17px]">
+                            Flexible, simple license
+                          </p>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <div className="w-5 h-5 rounded-full inline-flex items-center justify-center bg-emerald-400 bg-opacity-10">
+                            <svg
+                              className="h-3 w-3 text-emerald-400"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
                           </div>
-                          <div className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full inline-flex items-center justify-center bg-emerald-400 bg-opacity-10">
-                              <svg
-                                className="h-3 w-3 text-emerald-400"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              >
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                              </svg>
-                            </div>
-                            <p className="text-gray-800 text-[17px]">
-                              6 months free support included
-                            </p>
+                          <p className="text-gray-800 text-[17px]">
+                            Speedy build tooling
+                          </p>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <div className="w-5 h-5 rounded-full inline-flex items-center justify-center bg-emerald-400 bg-opacity-10">
+                            <svg
+                              className="h-3 w-3 text-emerald-400"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
                           </div>
+                          <p className="text-gray-800 text-[17px]">
+                            6 months free support included
+                          </p>
                         </div>
                       </div>
                       <button className="text-center text-white px-5 py-4 w-full bg-blue-600 hover:bg-blue-700 transition-all ease-in-out duration-200">
@@ -797,29 +781,29 @@ function Alex() {
                       </button>
                     </div>
 
-                    <div className="md:w-1/2 max-w-md w-full bg-white md:rounded-r-lg rounded-lg overflow-hidden shadow-2xl z-0">
-                      <div className="flex flex-col items-center max-w-sm md:pt-16 pt-10 md:pb-12 pb-7 mx-auto">
-                        <div className="self-center px-4 py-2 text-blue-600 tracking-wide text-xs leading-none bg-blue-100 rounded-full uppercase">
+                    <div className="   w-full bg-white rounded-lg md:rounded-bl-none md:rounded-tl-none md:rounded-tr-lg md:rounded-br-lg overflow-hidden shadow-2xl z-0">
+                      <div className="flex flex-col items-center  px-8 md:pt-10 pt-8 md:pb-8 pb-7 mx-auto">
+                        <div className="self-center px-2 py-2 text-blue-600 tracking-wide text-xs leading-none bg-blue-100 rounded-full uppercase   font-semibold">
                           Enterprise
                         </div>
 
-                        <div className="mx-auto md:my-24 sm:my-16 my-8 px-5">
-                          <p className="text-[21px] text-gray-400 leading-relaxed text-center">
+                        <div className="mx-auto md:my-24 sm:my-16 my-8">
+                          <p className="text-[19px] md:text-[21px] text-gray-400 leading-relaxed text-center">
                             We offer variable pricing with discounts for larger
                             organizations. Get in touch with us and we’ll figure
                             out something that works for everyone.
                           </p>
                         </div>
                       </div>
-                      <button className="text-center text-gray-700 px-5 py-4 w-full bg-gray-200 hover:bg-gray-300 transition-all ease-in-out duration-200">
+                      <button className="text-center text-brand-gray px-5 py-4 w-full bg-brand-gray-light hover:bg-gray-300 transition-all ease-in-out duration-200 font-medium">
                         Contact us
                       </button>
                     </div>
                   </div>
 
-                  <div className="py-2 grid md:grid-cols-2 grid-cols-1 gap-x-5 gap-y-12 my-20 lg:mx-0 mx-6">
+                  <div className="py-2 grid md:grid-cols-2 grid-cols-1 gap-x-10 gap-y-12 my-20 lg:mx-0 mx-6">
                     <div className="flex gap-5 items-start">
-                      <div className="flex items-center justify-center bg-emerald-500 rounded-full w-9 h-9 flex-shrink-0">
+                      <div className="flex items-center justify-center bg-brand-green rounded-full w-[30.59px] h-[30.59px] flex-shrink-0">
                         <svg
                           className="w-6 h-6 text-white"
                           xmlns="http://www.w3.org/2000/svg"
@@ -834,8 +818,8 @@ function Alex() {
                           <line x1="12" y1="17" x2="12.01" y2="17"></line>
                         </svg>
                       </div>
-                      <div className="flex flex-col gap-3">
-                        <h5 className="text-[21px] text-white">
+                      <div className="flex flex-col gap-2">
+                        <h5 className="text-[17px] md:text-[19px] text-white">
                           Can I use Landkit for my clients?{" "}
                         </h5>
                         <p className="text-white/50 text-[17px] leading-relaxed">
@@ -846,7 +830,7 @@ function Alex() {
                     </div>
 
                     <div className="flex gap-5 items-start">
-                      <div className="flex items-center justify-center bg-emerald-500 rounded-full w-9 h-9 flex-shrink-0">
+                      <div className="flex items-center justify-center bg-brand-green rounded-full w-[30.59px] h-[30.59px] flex-shrink-0">
                         <svg
                           className="w-6 h-6 text-white"
                           xmlns="http://www.w3.org/2000/svg"
@@ -861,8 +845,8 @@ function Alex() {
                           <line x1="12" y1="17" x2="12.01" y2="17"></line>
                         </svg>
                       </div>
-                      <div className="flex flex-col gap-3">
-                        <h5 className="text-[21px] text-white">
+                      <div className="flex flex-col gap-2">
+                        <h5 className="text-[17px] md:text-[19px]  text-white">
                           Is there a money back guarantee?{" "}
                         </h5>
                         <p className="text-white/50 text-[17px] leading-relaxed">
@@ -873,7 +857,7 @@ function Alex() {
                     </div>
 
                     <div className="flex gap-5 items-start">
-                      <div className="flex items-center justify-center bg-emerald-500 rounded-full w-9 h-9 flex-shrink-0">
+                      <div className="flex items-center justify-center bg-brand-green rounded-full w-[30.59px] h-[30.59px] flex-shrink-0">
                         <svg
                           className="w-6 h-6 text-white"
                           xmlns="http://www.w3.org/2000/svg"
@@ -888,8 +872,8 @@ function Alex() {
                           <line x1="12" y1="17" x2="12.01" y2="17"></line>
                         </svg>
                       </div>
-                      <div className="flex flex-col gap-3">
-                        <h5 className="text-[21px] text-white">
+                      <div className="flex flex-col gap-2">
+                        <h5 className="text-[17px] md:text-[19px]  text-white">
                           Do I get free updates?
                         </h5>
                         <p className="text-white/50 text-[17px] leading-relaxed">
@@ -901,7 +885,7 @@ function Alex() {
                     </div>
 
                     <div className="flex gap-5 items-start">
-                      <div className="flex items-center justify-center bg-emerald-500 rounded-full w-9 h-9 flex-shrink-0">
+                      <div className="flex items-center justify-center bg-brand-green rounded-full w-[30.59px] h-[30.59px] flex-shrink-0">
                         <svg
                           className="w-6 h-6 text-white"
                           xmlns="http://www.w3.org/2000/svg"
@@ -916,8 +900,8 @@ function Alex() {
                           <line x1="12" y1="17" x2="12.01" y2="17"></line>
                         </svg>
                       </div>
-                      <div className="flex flex-col gap-3">
-                        <h5 className="text-[21px] text-white">
+                      <div className="flex flex-col gap-2">
+                        <h5 className="text-[17px] md:text-[19px]  text-white">
                           Does it work with Rails? React? Laravel?{" "}
                         </h5>
                         <p className="text-white/50 text-[17px] leading-relaxed">
@@ -931,18 +915,21 @@ function Alex() {
                   </div>
 
                   <div className="flex flex-col items-center gap-5 pt-5 pb-10 lg:mx-0 mx-6">
-                    <span className="self-center bg-white/5 px-4 py-2 rounded-full text-white/20 text-xs tracking-wider uppercase">
+                    <span className="self-center font-semibold bg-[#5066901a] px-4 py-2 rounded-full text-brand-gray text-xs tracking-wider uppercase">
                       Get Started
                     </span>
-                    <h6 className="text-center text-white text-4xl lg:text-[43px] font-normal">
+                    <h6 className="text-center text-white text-[30px] lg:text-[43px] font-normal">
                       Get Landkit and save your time.
                     </h6>
-                    <p className="text-white/50 text-[19px] leading-relaxed text-center max-w-2xl mx-auto">
+                    <p className="text-blue-lighter md:px-8 text-[19px] leading-relaxed text-center max-w-2xl mx-auto">
                       Stop wasting time trying to do it the "right way" and
                       build a site from scratch. Landkit is faster, easier, and
                       you still have complete control.
                     </p>
-                    <button className="flex items-center gap-1.5 mt-6 text-[17px] text-center text-white px-5 py-3.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 transition-all ease-in-out duration-200 hover:-translate-y-0.5 transform hover:shadow-lg">
+                    <a
+                      href="#"
+                      className="flex items-center gap-1.5 mt-6 text-[17px] text-center text-white px-5 py-3.5 rounded-lg bg-brand-green  lift"
+                    >
                       Buy it now
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -958,7 +945,7 @@ function Alex() {
                           d="M13 7l5 5m0 0l-5 5m5-5H6"
                         />
                       </svg>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -966,18 +953,18 @@ function Alex() {
           </div>
         </div>
 
-        <div className="bg-[#F1F4F8] px-10 lg:mx-0 -mx-5">
+        <div className="bg-[#F1F4F8]  px-5 md:px-12 xl:px-5 ">
           <div className="max-w-screen-lg mx-auto">
-            <footer aria-labelledby="footer-heading">
+            <footer aria-labelledby="footer-heading  ">
               <h2 id="footer-heading" class="sr-only">
                 Footer
               </h2>
-              <div class="py-12">
-                <div class="xl:grid xl:grid-cols-4 xl:gap-8">
-                  <div class="space-y-5 xl:col-span-1">
-                    <img class="w-28" src={logo} alt="Company name" />
-                    <p class="text-gray-500">A better way to build.</p>
-                    <div class="flex space-x-4">
+              <div class="py-20">
+                <div class="md:grid md:grid-cols-4 gap-8">
+                  <div class="md:col-span-1">
+                    <img class="w-24" src={logo} alt="Company name" />
+                    <p class="text-brand-gray pt-3">A better way to build.</p>
+                    <div class="flex space-x-4 pt-3">
                       <a href="#" class="text-gray-400 hover:text-gray-500">
                         <span class="sr-only">Instagram</span>
                         <svg
@@ -1034,10 +1021,10 @@ function Alex() {
                       </a>
                     </div>
                   </div>
-                  <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-3">
-                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                  <div class="mt-12 md:mt-0  grid md:grid-cols-2  items-start gap-8 xl:mt-0 md:col-span-3">
+                    <div class="grid grid-cols-2 grid-5 md:gap-8 ">
                       <div>
-                        <h3 class="text-sm font-semibold text-gray-500 tracking-wider uppercase">
+                        <h3 class="text-[12px] font-semibold text-gray-500 tracking-wider uppercase">
                           PRODUCTS
                         </h3>
                         <ul role="list" class="mt-4 space-y-4">
@@ -1077,8 +1064,8 @@ function Alex() {
                           </li>
                         </ul>
                       </div>
-                      <div class="mt-12 md:mt-0">
-                        <h3 class="text-sm font-semibold text-gray-500 tracking-wider uppercase">
+                      <div class=" ">
+                        <h3 class="text-[12px] font-semibold text-gray-500 tracking-wider uppercase">
                           Services
                         </h3>
                         <ul role="list" class="mt-4 space-y-4">
@@ -1112,9 +1099,9 @@ function Alex() {
                         </ul>
                       </div>
                     </div>
-                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                    <div class="grid grid-cols-2 gap-5 md:gap-8 ">
                       <div>
-                        <h3 class="text-sm font-semibold text-gray-500 tracking-wider uppercase">
+                        <h3 class="text-[12px] font-semibold text-gray-500 tracking-wider uppercase">
                           CONNECT
                         </h3>
                         <ul role="list" class="mt-4 space-y-4">
@@ -1169,8 +1156,8 @@ function Alex() {
                         </ul>
                       </div>
 
-                      <div class="mt-12 md:mt-0">
-                        <h3 class="text-sm font-semibold text-gray-500 tracking-wider uppercase">
+                      <div class=" ">
+                        <h3 class="text-[12px] font-semibold text-gray-500 tracking-wider uppercase">
                           LEGAL
                         </h3>
                         <ul role="list" class="mt-4 space-y-4">
