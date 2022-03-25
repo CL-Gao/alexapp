@@ -54,7 +54,7 @@ function Alex() {
         <div className="max-w-screen-lg mx-auto">
           <div className="w-full px-5  md:px-12 xl:px-5  text-center md:text-left flex md:flex-row flex-col-reverse items-center justify-between lg:gap-4 gap-8 lg:pt-20 pt-10 pb-16">
             <div className="w-full lg:w-6/12 flex flex-col gap-4 md:gap-6">
-              <h1 className="sm:text-5xl text-4xl text-gray-800 !leading-[1.2]">
+              <h1 className="sm:text-5xl text-4xl text-gray-800 !leading-[1.2] tracking-tighter">
                 Welcome to <span className="text-blue-600">LandKit</span>.<br />
                 Develop anything.
               </h1>
@@ -66,6 +66,20 @@ function Alex() {
               <div className="w-[350px] sm:w-auto mx-auto sm:mx-0 sm:max-w-none  flex justify-center md:justify-start items-center gap-2 mt-3">
                 <button className="w-auto md:w-fit flex mx-auto sm:w-auto sm:mx-0 items-center  justify-center gap-1.5  text-center text-white px-5 py-3.5 rounded-lg bg-blue-600 hover:bg-blue-700 transition-all ease-in-out duration-200 hover:-translate-y-0.5 transform hover:shadow-lg font-semibold">
                   <span className="text-[17px]">View all pages</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="sm:h-6 h-4 w-4 sm:w-6 hidden md:block"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
                 </button>
 
                 <button className="w-auto md:w-fit text-[17px] text-center mx-auto sm:w-auto sm:mx-0 text-blue-600 px-5 py-3.5 rounded-lg bg-blue-600 bg-opacity-10 font-semibold transition-all ease-in-out duration-200 hover:-translate-y-0.5 transform hover:shadow-lg ">
@@ -102,7 +116,7 @@ function Alex() {
                   </g>
                 </svg>
               </div>
-              <h4 className="text-gray-800 text-[21px]">
+              <h4 className="text-gray-800 text-[19px]">
                 Built for developers{" "}
               </h4>
               <p className="text-blue-lighter leading-7 tracking-normal text-[17px]">
@@ -132,7 +146,7 @@ function Alex() {
                   </g>
                 </svg>
               </div>
-              <h4 className="text-gray-800 text-[21px]">
+              <h4 className="text-gray-800 text-[19px]">
                 Designed to be modern{" "}
               </h4>
               <p className="text-blue-lighter leading-7 tracking-normal text-[17px]">
@@ -167,7 +181,7 @@ function Alex() {
                   </g>
                 </svg>
               </div>
-              <h4 className="text-gray-800 text-[21px]">
+              <h4 className="text-gray-800 text-[19px]">
                 Documentation for everything
               </h4>
               <p className="text-blue-lighter leading-7 tracking-normal text-[17px]">
@@ -568,7 +582,7 @@ function Alex() {
           </div>
         </div>
 
-        <div className="bg-[#f1f4f8] px-5 md:px-12 xl:px-5  mb-[90%] md:mb-0">
+        <div className="bg-[#f1f4f8] px-5 md:px-12 xl:px-5  pb-[90%] md:pb-0">
           <div className="max-w-[500px] md:max-w-screen-lg mx-auto">
             <div className=" md:-mt-24  ">
               <div className="pb-10 md:pb-28 pt-32 md:pt-56">
@@ -624,7 +638,6 @@ function Alex() {
                 </h6>
                 <p className="text-brand-gray tracking-tight text-[21px] leading-relaxed text-center max-w-2xl mx-auto">
                   All types of businesses need access to development resources,
-                  <br />
                   so we give you the option to decide how much you need to use.
                 </p>
 
@@ -801,8 +814,8 @@ function Alex() {
                     </div>
                   </div>
 
-                  <div className="py-2 grid md:grid-cols-2 grid-cols-1 gap-x-10 gap-y-12 my-20 lg:mx-0 mx-6">
-                    <div className="flex gap-5 items-start">
+                  <div className="py-2  grid md:grid-cols-2 grid-cols-1 gap-x-10 gap-y-12 my-20 lg:mx-0 mx-5">
+                    <div className="order-1 flex gap-5 items-start">
                       <div className="flex items-center justify-center bg-brand-green rounded-full w-[30.59px] h-[30.59px] flex-shrink-0">
                         <svg
                           className="w-6 h-6 text-white"
@@ -822,14 +835,14 @@ function Alex() {
                         <h5 className="text-[17px] md:text-[19px] text-white">
                           Can I use Landkit for my clients?{" "}
                         </h5>
-                        <p className="text-white/50 text-[17px] leading-relaxed">
+                        <p className="text-blue-lighter text-[17px] leading-relaxed">
                           Absolutely. The Bootstrap Themes license allows you to
                           build a website for personal use or for a client.
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex gap-5 items-start">
+                    <div className="order-3 md:order-2 flex gap-5 items-start">
                       <div className="flex items-center justify-center bg-brand-green rounded-full w-[30.59px] h-[30.59px] flex-shrink-0">
                         <svg
                           className="w-6 h-6 text-white"
@@ -849,14 +862,14 @@ function Alex() {
                         <h5 className="text-[17px] md:text-[19px]  text-white">
                           Is there a money back guarantee?{" "}
                         </h5>
-                        <p className="text-white/50 text-[17px] leading-relaxed">
+                        <p className="text-blue-lighter text-[17px] leading-relaxed">
                           Yup! Bootstrap Themes come with a satisfaction
                           guarantee. Submit a return and get your money back.
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex gap-5 items-start">
+                    <div className="order-2  md:order-3 flex gap-5 items-start">
                       <div className="flex items-center justify-center bg-brand-green rounded-full w-[30.59px] h-[30.59px] flex-shrink-0">
                         <svg
                           className="w-6 h-6 text-white"
@@ -876,7 +889,7 @@ function Alex() {
                         <h5 className="text-[17px] md:text-[19px]  text-white">
                           Do I get free updates?
                         </h5>
-                        <p className="text-white/50 text-[17px] leading-relaxed">
+                        <p className="text-blue-lighter text-[17px] leading-relaxed">
                           Yes. We update all of our themes with each Bootstrap
                           update, plus are constantly adding new components,
                           pages, and features to our themes.
@@ -884,7 +897,7 @@ function Alex() {
                       </div>
                     </div>
 
-                    <div className="flex gap-5 items-start">
+                    <div className="order-4 flex gap-5 items-start">
                       <div className="flex items-center justify-center bg-brand-green rounded-full w-[30.59px] h-[30.59px] flex-shrink-0">
                         <svg
                           className="w-6 h-6 text-white"
@@ -904,7 +917,7 @@ function Alex() {
                         <h5 className="text-[17px] md:text-[19px]  text-white">
                           Does it work with Rails? React? Laravel?{" "}
                         </h5>
-                        <p className="text-white/50 text-[17px] leading-relaxed">
+                        <p className="text-blue-lighter text-[17px] leading-relaxed">
                           Yes. Landkit has basic CSS/JS files you can include.
                           If you want to enable deeper customization, you can
                           integrate it into your assets pipeline or build
@@ -965,7 +978,7 @@ function Alex() {
                     <img class="w-24" src={logo} alt="Company name" />
                     <p class="text-brand-gray pt-3">A better way to build.</p>
                     <div class="flex space-x-4 pt-3">
-                      <a href="#" class="text-gray-400 hover:text-gray-500">
+                      <a href="#" class="text-gray-400 hover:text-brand-gray">
                         <span class="sr-only">Instagram</span>
                         <svg
                           class="h-6 w-6"
@@ -981,7 +994,7 @@ function Alex() {
                         </svg>
                       </a>
 
-                      <a href="#" class="text-gray-400 hover:text-gray-500">
+                      <a href="#" class="text-gray-400 hover:text-brand-gray">
                         <span class="sr-only">Facebook</span>
                         <svg
                           class="h-6 w-6"
@@ -997,7 +1010,7 @@ function Alex() {
                         </svg>
                       </a>
 
-                      <a href="#" class="text-gray-400 hover:text-gray-500">
+                      <a href="#" class="text-gray-400 hover:text-brand-gray">
                         <span class="sr-only">Twitter</span>
                         <svg
                           class="h-6 w-6"
@@ -1009,7 +1022,7 @@ function Alex() {
                         </svg>
                       </a>
 
-                      <a href="#" class="text-gray-400 hover:text-gray-500">
+                      <a href="#" class="text-gray-400 hover:text-brand-gray">
                         <span class="sr-only">Pinterest</span>
                         <svg
                           className="w-5 h-5 fill-current"
@@ -1024,7 +1037,7 @@ function Alex() {
                   <div class="mt-12 md:mt-0  grid md:grid-cols-2  items-start gap-8 xl:mt-0 md:col-span-3">
                     <div class="grid grid-cols-2 grid-5 md:gap-8 ">
                       <div>
-                        <h3 class="text-[12px] font-semibold text-gray-500 tracking-wider uppercase">
+                        <h3 class="text-[12px] font-semibold text-brand-gray tracking-wider uppercase">
                           PRODUCTS
                         </h3>
                         <ul role="list" class="mt-4 space-y-4">
@@ -1065,7 +1078,7 @@ function Alex() {
                         </ul>
                       </div>
                       <div class=" ">
-                        <h3 class="text-[12px] font-semibold text-gray-500 tracking-wider uppercase">
+                        <h3 class="text-[12px] font-semibold text-brand-gray tracking-wider uppercase">
                           Services
                         </h3>
                         <ul role="list" class="mt-4 space-y-4">
@@ -1101,7 +1114,7 @@ function Alex() {
                     </div>
                     <div class="grid grid-cols-2 gap-5 md:gap-8 ">
                       <div>
-                        <h3 class="text-[12px] font-semibold text-gray-500 tracking-wider uppercase">
+                        <h3 class="text-[12px] font-semibold text-brand-gray tracking-wider uppercase">
                           CONNECT
                         </h3>
                         <ul role="list" class="mt-4 space-y-4">
@@ -1157,7 +1170,7 @@ function Alex() {
                       </div>
 
                       <div class=" ">
-                        <h3 class="text-[12px] font-semibold text-gray-500 tracking-wider uppercase">
+                        <h3 class="text-[12px] font-semibold text-brand-gray tracking-wider uppercase">
                           LEGAL
                         </h3>
                         <ul role="list" class="mt-4 space-y-4">
