@@ -1,9 +1,9 @@
-import './App.css';
-import Alex from './components/Alex/Alex';
+import "./App.css";
+import Alex from "./components/Alex/Alex";
 
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <Alex />
     </div>
   );

@@ -22,4 +22,34 @@
     backface-visibility: hidden;
     transform: rotateY(-35deg) rotateX(15deg);
   }
+  .mw-lg-130{
+        max-width: 100%;
+    }
+  @media (min-width: 992px) {
+      .mw-lg-130{
+      max-width: 130%!important;
+  }
+  }
+  .lift{
+     transition: box-shadow .25s ease,transform .25s ease;
+       background-color: #42ba96;
+    border-color: #42ba96;
+    box-shadow: 0 0;
+    color: #fff;
+    } 
+   .lift:focus, .lift:hover {
+      box-shadow: 0 1rem 2.5rem rgba(22,28,45,.1),0 .5rem 1rem -.75rem rgba(22,28,45,.1)!important;
+      transform: translate3d(0,-3px,0);
+  } 
+  .navbar{
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      display: inline-block;
+      height: 1.7em;
+      vertical-align: middle;
+      width: 1.7em; 
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23506690' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  
+  }
 }
