@@ -7,36 +7,36 @@ import side from "../assets/side.png";
 
 function Alex() {
   return (
-    <div className="bg-white w-full mx-auto overflow-hidden">
+    <div className="w-full mx-auto overflow-hidden bg-white">
       <div className="mx-auto">
         <div className="max-w-screen-lg mx-auto">
-          <nav className="w-full px-5  md:px-12 xl:px-5 py-6 flex items-center justify-between gap-5">
+          <nav className="flex items-center justify-between w-full gap-5 px-5 py-6 md:px-12 xl:px-5">
             <a href="/" className="w-24">
               <img className="w-full h-full" src={logo} alt="" />
             </a>
 
-            <div className="md:flex hidden items-end justify-between gap-9 mt-1">
+            <div className="items-end justify-between hidden mt-1 md:flex gap-9">
               <a
                 href="#"
-                className="text-brand-gray font-medium hover:text-blue-700 transition-colors ease-in-out duration-150"
+                className="font-medium transition-colors duration-150 ease-in-out text-brand-gray hover:text-blue-700"
               >
                 Landings
               </a>
               <a
                 href="#"
-                className="text-brand-gray font-medium hover:text-blue-700 transition-colors ease-in-out duration-150"
+                className="font-medium transition-colors duration-150 ease-in-out text-brand-gray hover:text-blue-700"
               >
                 Pages
               </a>
               <a
                 href="#"
-                className="text-brand-gray font-medium hover:text-blue-700 transition-colors ease-in-out duration-150"
+                className="font-medium transition-colors duration-150 ease-in-out text-brand-gray hover:text-blue-700"
               >
                 Account
               </a>
               <a
                 href="#"
-                className="text-brand-gray font-medium hover:text-blue-700 transition-colors ease-in-out duration-150"
+                className="font-medium transition-colors duration-150 ease-in-out text-brand-gray hover:text-blue-700"
               >
                 Documentation
               </a>
@@ -45,15 +45,15 @@ function Alex() {
             <button className="md:inline-flex hidden text-center text-white px-[16px] py-[9px] font-semibold rounded-lg bg-blue-600 hover:bg-blue-700 transition-all ease-in-out duration-200 hover:-translate-y-0.5 transform hover:shadow-lg">
               Buy now
             </button>
-            <button className="md:hidden px-3">
+            <button className="px-3 md:hidden">
               <span className="navbar"></span>
             </button>
           </nav>
         </div>
 
         <div className="max-w-screen-lg mx-auto">
-          <div className="w-full px-5  md:px-12 xl:px-5  text-center md:text-left flex md:flex-row flex-col-reverse items-center justify-between lg:gap-4 gap-8 lg:pt-20 pt-10 pb-16">
-            <div className="w-full lg:w-6/12 flex flex-col gap-4 md:gap-6">
+          <div className="flex flex-col-reverse items-center justify-between w-full gap-8 px-5 pt-10 pb-16 text-center md:px-12 xl:px-5 md:text-left md:flex-row lg:gap-4 lg:pt-20">
+            <div className="flex flex-col w-full gap-4 lg:w-6/12 md:gap-6">
               <h1 className="sm:text-5xl text-4xl text-gray-800 !leading-[1.2] tracking-tighter">
                 Welcome to <span className="text-blue-600">LandKit</span>.<br />
                 Develop anything.
@@ -63,8 +63,8 @@ function Alex() {
                 Bootstrapcomponents built from scratch.
               </p>
 
-              <div className="w-[350px] sm:w-auto mx-auto sm:mx-0 sm:max-w-none  flex justify-center md:justify-start items-center gap-2 mt-3">
-                <button className="w-auto md:w-fit flex mx-auto sm:w-auto sm:mx-0 items-center  justify-center gap-1.5  text-center text-white px-5 py-3.5 rounded-lg bg-blue-600 hover:bg-blue-700 transition-all ease-in-out duration-200 hover:-translate-y-0.5 transform hover:shadow-lg font-semibold">
+              <div className="flex items-center justify-center gap-2 mx-auto mt-3 w-fit md:justify-start md:mx-0">
+                <button className="w-auto md:w-fit flex mx-auto sm:w-auto sm:mx-0 items-center  justify-center gap-1.5  text-center text-white px-5 py-3.5 rounded-lg bg-blue-600 hover:bg-blue-700 transition-all ease-in-out duration-200 hover:-translate-y-0.5 transform hover:shadow-lg font-semibold flex-none">
                   <span className="text-[17px]">View all pages</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +87,7 @@ function Alex() {
                 </button>
               </div>
             </div>
-            <div className="w-full lg:w-6/12  ">
+            <div className="w-full lg:w-6/12 ">
               <img className="h-full mw-lg-130" src={hero} />
             </div>
           </div>
@@ -95,7 +95,7 @@ function Alex() {
 
         <div className="max-w-screen-lg mx-auto">
           <div className="w-full px-5  md:px-12 xl:px-5 grid md:grid-cols-3 grid-cols-1 gap-8 md:gap-10 xl:gap-8 max-w-[570px] md:max-w-none mx-auto">
-            <div className="flex flex-col gap-3 w-full">
+            <div className="flex flex-col w-full gap-3">
               <div>
                 <svg
                   className="w-12 h-12"
@@ -125,7 +125,7 @@ function Alex() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 w-full">
+            <div className="flex flex-col w-full gap-3">
               <div>
                 <svg
                   className="w-12 h-12"
@@ -155,7 +155,7 @@ function Alex() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 w-full">
+            <div className="flex flex-col w-full gap-3">
               <div>
                 <svg
                   className="w-12 h-12"
@@ -192,10 +192,10 @@ function Alex() {
           </div>
         </div>
 
-        <div className="border-t border-gray-100 my-12 md:mt-20 md:mb-12 px-5 md:px-12 xl:px-5">
+        <div className="px-5 my-12 border-t border-gray-100 md:mt-20 md:mb-12 md:px-12 xl:px-5">
           <div className="max-w-screen-lg mx-auto">
             <div className="grid px-2 max-w-[560px] pt-8 md:pt-12 md:max-w-none mx-auto md:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-5 md:gap-10">
-              <div className="text-blue-lighter flex justify-center">
+              <div className="flex justify-center text-blue-lighter">
                 <svg
                   className="fill-current w-44 md:w-36"
                   viewBox="0 0 2761 991"
@@ -209,7 +209,7 @@ function Alex() {
                 </svg>
               </div>
 
-              <div className="text-blue-lighter flex justify-center">
+              <div className="flex justify-center text-blue-lighter">
                 <svg
                   className="fill-current w-44 md:w-36"
                   viewBox="0 0 2761 991"
@@ -223,7 +223,7 @@ function Alex() {
                 </svg>
               </div>
 
-              <div className="text-blue-lighter flex justify-center">
+              <div className="flex justify-center text-blue-lighter">
                 <svg
                   className="fill-current w-44 md:w-36"
                   viewBox="0 0 2761 991"
@@ -237,7 +237,7 @@ function Alex() {
                 </svg>
               </div>
 
-              <div className="text-blue-lighter flex justify-center">
+              <div className="flex justify-center text-blue-lighter">
                 <svg
                   className="fill-current w-44 md:w-36"
                   viewBox="0 0 2761 991"
@@ -251,7 +251,7 @@ function Alex() {
                 </svg>
               </div>
 
-              <div className="text-blue-lighter flex justify-center">
+              <div className="flex justify-center text-blue-lighter">
                 <svg
                   className="fill-current w-44 md:w-36"
                   viewBox="0 0 2761 991"
@@ -265,7 +265,7 @@ function Alex() {
                 </svg>
               </div>
 
-              <div className="text-blue-lighter flex justify-center">
+              <div className="flex justify-center text-blue-lighter">
                 <svg
                   className="fill-current w-44 md:w-36"
                   viewBox="0 0 2761 991"
@@ -282,14 +282,14 @@ function Alex() {
           </div>
         </div>
 
-        <div className="bg-light-gradient px-5 md:px-12 xl:px-5 pt-12 border-t border-gray-100">
+        <div className="px-5 pt-12 border-t border-gray-100 bg-light-gradient md:px-12 xl:px-5">
           <div className="max-w-screen-lg mx-auto ">
             <div className="w-full max-w-[560px] md:max-w-none mx-auto flex md:flex-row flex-col-reverse items-center justify-between lg:gap-32 sm:gap-20 gap-10">
               <div className="max-w-[560px] md:max-w-sm w-full rounded-lg overflow-hidden lg:shadow-none shadow-card hover:shadow-card hover:-translate-y-1 transform transition-all ease-in-out duration-200">
-                <div className="w-full h-64 object-cover">
-                  <img className="w-full h-full object-cover" src={photo} />
+                <div className="object-cover w-full h-64">
+                  <img className="object-cover w-full h-full" src={photo} />
                 </div>
-                <div className="bg-white p-7 flex flex-col gap-3">
+                <div className="flex flex-col gap-3 bg-white p-7">
                   <input
                     type="text"
                     className="w-full py-2.5 text-gray-800 placeholder:text-gray-400/80 text-lg focus:outline-none border-b border-transparent focus:border-blue-600 border-slate-100 transition-colors ease-in-out duration-200"
@@ -298,13 +298,13 @@ function Alex() {
 
                   <input
                     type="text"
-                    className="w-full py-2 text-gray-800 placeholder:text-gray-400/80 text-lg focus:outline-none border-b border-transparent focus:border-blue-600 border-slate-100 transition-colors ease-in-out duration-200"
+                    className="w-full py-2 text-lg text-gray-800 transition-colors duration-200 ease-in-out border-b border-transparent placeholder:text-gray-400/80 focus:outline-none focus:border-blue-600 border-slate-100"
                     placeholder="Email"
                   />
 
                   <input
                     type="text"
-                    className="w-full py-2 text-gray-800 placeholder:text-gray-400/80 text-lg focus:outline-none border-b border-transparent focus:border-blue-600 border-slate-100 transition-colors ease-in-out duration-200"
+                    className="w-full py-2 text-lg text-gray-800 transition-colors duration-200 ease-in-out border-b border-transparent placeholder:text-gray-400/80 focus:outline-none focus:border-blue-600 border-slate-100"
                     placeholder="Password"
                   />
 
@@ -314,7 +314,7 @@ function Alex() {
                 </div>
               </div>
 
-              <div className="w-full flex flex-col gap-5">
+              <div className="flex flex-col w-full gap-5">
                 <h4 className="text-gray-800 text-[24px] md:text-[31px] font-normal leading-snug">
                   The most useful resource <br />
                   <span className=" text-brand-green">
@@ -328,11 +328,11 @@ function Alex() {
                   will make your life easier.
                 </p>
 
-                <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-8 gap-y-3.5 mt-3 text-[17px]">
+                <div className="grid gap-y-3.5 lg:grid-cols-2 lg:gap-x-8 mt-3 text-[17px]">
                   <div className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full inline-flex items-center justify-center bg-emerald-400 bg-opacity-10">
+                    <div className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-400 bg-opacity-10">
                       <svg
-                        className="h-3 w-3 text-emerald-400"
+                        className="w-3 h-3 text-emerald-400"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill="none"
@@ -350,9 +350,29 @@ function Alex() {
                   </div>
 
                   <div className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full inline-flex items-center justify-center bg-emerald-400 bg-opacity-10">
+                    <div className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-400 bg-opacity-10">
                       <svg
-                        className="h-3 w-3 text-emerald-400"
+                        className="w-3 h-3 text-emerald-400"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    </div>
+                    <p className="text-brand-green text-[17px] font-medium">
+                      Tons of assets{" "}
+                    </p>
+                  </div>
+
+                  <div className="flex items-center gap-3 lg:row-start-1 lg:col-start-2">
+                    <div className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-400 bg-opacity-10">
+                      <svg
+                        className="w-3 h-3 text-emerald-400"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill="none"
@@ -370,29 +390,9 @@ function Alex() {
                   </div>
 
                   <div className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full inline-flex items-center justify-center bg-emerald-400 bg-opacity-10">
+                    <div className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-400 bg-opacity-10">
                       <svg
-                        className="h-3 w-3 text-emerald-400"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                      </svg>
-                    </div>
-                    <p className="text-brand-green text-[17px] font-medium">
-                      Tons of assets{" "}
-                    </p>
-                  </div>
-
-                  <div className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full inline-flex items-center justify-center bg-emerald-400 bg-opacity-10">
-                      <svg
-                        className="h-3 w-3 text-emerald-400"
+                        className="w-3 h-3 text-emerald-400"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill="none"
@@ -413,10 +413,10 @@ function Alex() {
             </div>
 
             <div className="flex max-w-[560px] md:max-w-none mx-auto md:flex-row flex-col justify-between w-full items-center pt-28 pb-14 md:py-24 lg:gap-6 gap-14">
-              <div className="lg:max-w-lg flex w-full flex-col gap-y-6 md:gap-5">
+              <div className="flex flex-col w-full lg:max-w-lg gap-y-6 md:gap-5">
                 <h4 className="text-gray-800 text-[24px] md:text-[31px] font-normal leading-snug">
                   We have lots of experience <br />
-                  <span className=" text-blue-600">
+                  <span className="text-blue-600 ">
                     building Bootstrap themes.{" "}
                   </span>
                 </h4>
@@ -426,9 +426,9 @@ function Alex() {
                   of thousands of copies.
                 </p>
 
-                <div className="flex gap-x-6 gap-y-4 md:gap-4 items-start mt-3">
+                <div className="flex items-start mt-3 gap-x-6 gap-y-4 md:gap-4">
                   <svg
-                    className="md:w-14 w-24 "
+                    className="w-24 md:w-14 "
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -456,7 +456,7 @@ function Alex() {
                   </div>
                 </div>
 
-                <div className="flex gap-x-6 gap-y-4 md:gap-4 items-start">
+                <div className="flex items-start gap-x-6 gap-y-4 md:gap-4">
                   <svg
                     className="md:w-14 w-28 "
                     viewBox="0 0 24 24"
@@ -480,7 +480,7 @@ function Alex() {
                       ></rect>
                     </g>
                   </svg>
-                  <div className="flex flex-col  gap-1 md:gap-2">
+                  <div className="flex flex-col gap-1 md:gap-2">
                     <h5 className="text-[17px] md:text-[19px] text-gray-800">
                       Deep understanding of Bootstrap{" "}
                     </h5>
@@ -503,7 +503,7 @@ function Alex() {
         </div>
 
         <div className="max-w-screen-lg mx-auto">
-          <div className="flex flex-col items-center gap-5 py-10 px-5">
+          <div className="flex flex-col items-center gap-5 px-5 py-10">
             <h6 className="text-center text-gray-800 text-[24px] md:text-[31px] font-normal">
               Our customers are our biggest fans.{" "}
             </h6>
@@ -515,11 +515,11 @@ function Alex() {
           </div>
         </div>
 
-        <div className="max-w-screen-lg mx-auto px-5 md:px-12 xl:px-5">
-          <div className="relative  w-full mx-auto">
-            <div className="rounded-lg shadow-2xl bg-white overflow-hidden flex flex-col md:flex-row items-center justify-between w-full">
+        <div className="max-w-screen-lg px-5 mx-auto md:px-12 xl:px-5">
+          <div className="relative w-full mx-auto">
+            <div className="flex flex-col items-center justify-between w-full overflow-hidden bg-white rounded-lg shadow-2xl-light md:flex-row">
               <div className="w-full md:w-[45%]">
-                <img className="h-86 w-full object-cover" src={photo1} />
+                <img className="object-cover w-full h-86" src={photo1} />
               </div>
 
               <div className="lg:w-[55%] w-full flex flex-col gap-5 px-6 sm:px-10 items-center justify-center md:py-0 py-8">
@@ -540,13 +540,13 @@ function Alex() {
                   project.”
                 </p>
 
-                <p className="text-gray-400 mt-4 leading-relaxed text-center max-w-2xl text-xs mx-auto">
+                <p className="max-w-2xl mx-auto mt-4 text-xs leading-relaxed text-center text-gray-400">
                   DAVE GAMACHE
                 </p>
               </div>
             </div>
 
-            <div className="md:w-14 h-14 w-14 md:h-14 rounded-full bg-blue-600 flex items-center justify-center absolute left-3 md:left-1 sm:left-0 mt-16 md:mt-0 top-2/3 md:top-1/2 transform -translate-y-1/2 -translate-x-1/2">
+            <div className="absolute flex items-center justify-center mt-16 transform -translate-x-1/2 -translate-y-1/2 bg-blue-600 rounded-full cursor-pointer md:w-14 h-14 w-14 md:h-14 left-3 md:left-1 sm:left-0 md:mt-0 top-2/3 md:top-1/2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-6 w-6 text-white"
@@ -563,7 +563,7 @@ function Alex() {
               </svg>
             </div>
 
-            <div className="md:w-14 h-14 w-14 md:h-14 rounded-full bg-blue-600 flex items-center justify-center absolute right-3 md:right-1 sm:right-0  mt-16 md:mt-0 top-2/3 md:top-1/2 transform -translate-y-1/2 translate-x-1/2">
+            <div className="absolute flex items-center justify-center mt-16 transform translate-x-1/2 -translate-y-1/2 bg-blue-600 rounded-full cursor-pointer md:w-14 h-14 w-14 md:h-14 right-3 md:right-1 sm:right-0 md:mt-0 top-2/3 md:top-1/2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-6 w-6 text-white"
@@ -582,15 +582,15 @@ function Alex() {
           </div>
         </div>
 
-        <div className="bg-[#f1f4f8] px-5 md:px-12 xl:px-5  pb-[90%] md:pb-0">
+        <div className="bg-[#f1f4f8] px-5 md:px-12 xl:px-5  pb-[77%] md:pb-0">
           <div className="max-w-[500px] md:max-w-screen-lg mx-auto">
-            <div className=" md:-mt-24  ">
-              <div className="pb-10 md:pb-28 pt-32 md:pt-56">
-                <div className="flex md:flex-row flex-col items-center justify-between w-full  lg:gap-3 gap-16">
+            <div className="-mt-12 md:-mt-24">
+              <div className="pt-32 pb-10 md:pb-28 md:pt-56">
+                <div className="flex flex-col items-center justify-between w-full gap-16 md:flex-row lg:gap-3">
                   <div className="lg:max-w-md max-w-[500px] w-full flex flex-col gap-5">
                     <h4 className="text-gray-800 text-[24px] md:text-[31px] font-normal tracking-tight leading-snug">
                       Stay focused on your business. <br />
-                      <span className=" text-blue-600">
+                      <span className="text-blue-600 ">
                         Let us handle the design.{" "}
                       </span>
                     </h4>
@@ -623,16 +623,16 @@ function Alex() {
                       </div>
                     </div>
                   </div>
-                  <div className="lg:w-1/2 w-full order-first md:order-none">
+                  <div className="order-first w-full lg:w-1/2 md:order-none">
                     <img
-                      className="md:h-80 h-64 w-full object-contain"
+                      className="object-contain w-full h-64 md:h-80"
                       src={side}
                     />
                   </div>
                 </div>
               </div>
 
-              <div className="flex flex-col items-center gap-5 pt-10 pb-80 ">
+              <div className="flex flex-col items-center gap-5 pt-10 pb-80 md:pb-56 lg:pb-72">
                 <h6 className="text-center text-gray-800 text-[30px] md:text-[37px] font-normal">
                   Fair, simple pricing for all.{" "}
                 </h6>
@@ -650,11 +650,11 @@ function Alex() {
                     viewBox="0 0 48 48"
                   >
                     <path
-                      fill="#b0bec5"
+                      fill="#d9e2ef"
                       d="M15,36h18c7.18,0,13-5.82,13-13v0c0-7.18-5.82-13-13-13H15C7.82,10,2,15.82,2,23v0
       C2,30.18,7.82,36,15,36z"
                     />
-                    <circle cx="15" cy="23" r="11" fill="#eceff1" />
+                    <circle cx="15" cy="23" r="11" fill="#ffffff" />
                   </svg>
                   <span>Monthly</span>
                 </div>
@@ -666,16 +666,16 @@ function Alex() {
         <div className="bg-[#1B2A4E] relative">
           <div className="">
             <div className="max-w-screen-lg mx-auto">
-              <div className="lg:mx-0 -mx-5">
-                <div className="py-16 px-5 md:px-12 xl:px-5">
+              <div className="-mx-5 lg:mx-0">
+                <div className="px-5 py-16 md:px-12 xl:px-5">
                   <div className="flex md:flex-row flex-col items-center justify-center md:-mt-[32%] sm:-mt-[40%] -mt-[160%] md:gap-0 gap-12 lg:mx-0 mx-6">
-                    <div className=" w-full bg-white shadow-2xl rounded-lg overflow-hidden z-10">
-                      <div className="flex flex-col items-center max-w-sm  md:pt-16 pt-10 md:pb-12 pb-7 mx-auto">
-                        <div className="self-center font-semibold px-4 py-2 text-blue-600 tracking-wide text-xs leading-none bg-blue-100 rounded-full uppercase">
+                    <div className="z-10 w-full overflow-hidden bg-white rounded-lg shadow-2xl ">
+                      <div className="flex flex-col items-center max-w-sm pt-10 mx-auto md:pt-12 md:pb-12 pb-7">
+                        <div className="self-center px-4 py-2 text-xs font-semibold leading-none tracking-wide text-blue-600 uppercase bg-blue-100 rounded-full">
                           Standard
                         </div>
 
-                        <div className="flex flex-col gap-1 mt-6 md:mt-12">
+                        <div className="flex flex-col gap-1 mt-6">
                           <div className="flex items-center md:items-end">
                             <div className="flex items-start">
                               <span className="text-gray-900  text-[24px] md:text-[31px] pt-3 md:pt-0">
@@ -689,14 +689,14 @@ function Alex() {
                               /mo
                             </div>
                           </div>
-                          <p className="text-gray-400 text-center">per seat</p>
+                          <p className="text-center text-gray-400">per seat</p>
                         </div>
                       </div>
                       <div className="flex flex-col gap-5 px-8 pb-12">
                         <div className="flex items-center gap-3">
-                          <div className="w-5 h-5 rounded-full inline-flex items-center justify-center bg-emerald-400 bg-opacity-10">
+                          <div className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-400 bg-opacity-10">
                             <svg
-                              className="h-3 w-3 text-emerald-400"
+                              className="w-3 h-3 text-emerald-400"
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 24 24"
                               fill="none"
@@ -713,9 +713,9 @@ function Alex() {
                           </p>
                         </div>
                         <div className="flex items-center gap-3">
-                          <div className="w-5 h-5 rounded-full inline-flex items-center justify-center bg-emerald-400 bg-opacity-10">
+                          <div className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-400 bg-opacity-10">
                             <svg
-                              className="h-3 w-3 text-emerald-400"
+                              className="w-3 h-3 text-emerald-400"
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 24 24"
                               fill="none"
@@ -732,9 +732,9 @@ function Alex() {
                           </p>
                         </div>
                         <div className="flex items-center gap-3">
-                          <div className="w-5 h-5 rounded-full inline-flex items-center justify-center bg-emerald-400 bg-opacity-10">
+                          <div className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-400 bg-opacity-10">
                             <svg
-                              className="h-3 w-3 text-emerald-400"
+                              className="w-3 h-3 text-emerald-400"
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 24 24"
                               fill="none"
@@ -751,9 +751,9 @@ function Alex() {
                           </p>
                         </div>
                         <div className="flex items-center gap-3">
-                          <div className="w-5 h-5 rounded-full inline-flex items-center justify-center bg-emerald-400 bg-opacity-10">
+                          <div className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-400 bg-opacity-10">
                             <svg
-                              className="h-3 w-3 text-emerald-400"
+                              className="w-3 h-3 text-emerald-400"
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 24 24"
                               fill="none"
@@ -770,9 +770,9 @@ function Alex() {
                           </p>
                         </div>
                         <div className="flex items-center gap-3">
-                          <div className="w-5 h-5 rounded-full inline-flex items-center justify-center bg-emerald-400 bg-opacity-10">
+                          <div className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-400 bg-opacity-10">
                             <svg
-                              className="h-3 w-3 text-emerald-400"
+                              className="w-3 h-3 text-emerald-400"
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 24 24"
                               fill="none"
@@ -789,33 +789,35 @@ function Alex() {
                           </p>
                         </div>
                       </div>
-                      <button className="text-center text-white px-5 py-4 w-full bg-blue-600 hover:bg-blue-700 transition-all ease-in-out duration-200">
+                      <button className="w-full px-5 py-5 text-center text-white transition-all duration-200 ease-in-out bg-blue-600 hover:bg-blue-700">
                         Get it now
                       </button>
                     </div>
 
-                    <div className="   w-full bg-white rounded-lg md:rounded-bl-none md:rounded-tl-none md:rounded-tr-lg md:rounded-br-lg overflow-hidden shadow-2xl z-0">
-                      <div className="flex flex-col items-center  px-8 md:pt-10 pt-8 md:pb-8 pb-7 mx-auto">
-                        <div className="self-center px-2 py-2 text-blue-600 tracking-wide text-xs leading-none bg-blue-100 rounded-full uppercase   font-semibold">
+                    <div className="z-0 w-full overflow-hidden bg-white rounded-lg shadow-2xl md:rounded-bl-none md:rounded-tl-none md:rounded-tr-lg md:rounded-br-lg">
+                      {/* update start */}
+                      <div className="flex flex-col items-center px-6 pt-8 mx-auto md:pt-10 md:pb-8 pb-7 lg:px-8 xl:px-16">
+                        <div className="self-center px-2 py-2 text-xs font-semibold leading-none tracking-wide text-blue-600 uppercase bg-blue-100 rounded-full">
                           Enterprise
                         </div>
 
-                        <div className="mx-auto md:my-24 sm:my-16 my-8">
-                          <p className="text-[19px] md:text-[21px] text-gray-400 leading-relaxed text-center">
+                        <div className="mx-auto my-8 md:my-24 sm:my-16">
+                          <p className="text-[19px] lg:text-[21px] text-gray-400 leading-relaxed text-center">
                             We offer variable pricing with discounts for larger
                             organizations. Get in touch with us and we’ll figure
                             out something that works for everyone.
                           </p>
                         </div>
                       </div>
-                      <button className="text-center text-brand-gray px-5 py-4 w-full bg-brand-gray-light hover:bg-gray-300 transition-all ease-in-out duration-200 font-medium">
+                      {/* update end */}
+                      <button className="w-full px-5 py-5 font-medium text-center transition-all duration-200 ease-in-out text-brand-gray bg-brand-gray-light ">
                         Contact us
                       </button>
                     </div>
                   </div>
 
-                  <div className="py-2  grid md:grid-cols-2 grid-cols-1 gap-x-10 gap-y-12 my-20 lg:mx-0 mx-5">
-                    <div className="order-1 flex gap-5 items-start">
+                  <div className="grid grid-cols-1 py-2 mx-5 my-20 md:grid-cols-2 gap-x-10 gap-y-12 lg:mx-0">
+                    <div className="flex items-start order-1 gap-5">
                       <div className="flex items-center justify-center bg-brand-green rounded-full w-[30.59px] h-[30.59px] flex-shrink-0">
                         <svg
                           className="w-6 h-6 text-white"
@@ -842,7 +844,7 @@ function Alex() {
                       </div>
                     </div>
 
-                    <div className="order-3 md:order-2 flex gap-5 items-start">
+                    <div className="flex items-start order-3 gap-5 md:order-2">
                       <div className="flex items-center justify-center bg-brand-green rounded-full w-[30.59px] h-[30.59px] flex-shrink-0">
                         <svg
                           className="w-6 h-6 text-white"
@@ -869,7 +871,7 @@ function Alex() {
                       </div>
                     </div>
 
-                    <div className="order-2  md:order-3 flex gap-5 items-start">
+                    <div className="flex items-start order-2 gap-5 md:order-3">
                       <div className="flex items-center justify-center bg-brand-green rounded-full w-[30.59px] h-[30.59px] flex-shrink-0">
                         <svg
                           className="w-6 h-6 text-white"
@@ -897,7 +899,7 @@ function Alex() {
                       </div>
                     </div>
 
-                    <div className="order-4 flex gap-5 items-start">
+                    <div className="flex items-start order-4 gap-5">
                       <div className="flex items-center justify-center bg-brand-green rounded-full w-[30.59px] h-[30.59px] flex-shrink-0">
                         <svg
                           className="w-6 h-6 text-white"
@@ -927,7 +929,7 @@ function Alex() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col items-center gap-5 pt-5 pb-10 lg:mx-0 mx-6">
+                  <div className="flex flex-col items-center gap-5 pt-5 pb-10 mx-6 lg:mx-0">
                     <span className="self-center font-semibold bg-[#5066901a] px-4 py-2 rounded-full text-brand-gray text-xs tracking-wider uppercase">
                       Get Started
                     </span>
